@@ -7,7 +7,7 @@ const theOldWay = function(course) {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('The old way:', theOldWay('Code 301'));
+//console.log('The old way:', theOldWay('Code 301'));
 
 
 // STEP 2
@@ -18,7 +18,7 @@ const theNewWay = (course) => {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('The new way:', theNewWay('Code 301'));
+//console.log('The new way:', theNewWay('Code 301'));
 
 
 // STEP 3
@@ -28,7 +28,7 @@ const withoutParens = course => {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('Without parens:', withoutParens('Code 301'));
+//console.log('Without parens:', withoutParens('Code 301'));
 
 
 // STEP 4
@@ -193,14 +193,16 @@ Student.prototype.scope = function() {
 // joe.scope();
 
 Student.prototype.scopeArrow = () => console.log(this);
+joe.scope();
+joe.scopeArrow();
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 // joe.scopeArrow();
 
 // TODO: Write a COMMENT below to answer the following questions.
-// 1. What is "this" when joe.scope() is invoked?
-//
+//1. What is "this" when joe.scope() is invoked?
+//The object "Joe" is displayed in the console.
 // 2. What is "this" when joe.scopeArrow() is invoked?
-//
+//it shows the window object.
 // 3. Explain why "this" is different when an arrow function is used.
-//
+//Because the this in the arrow function is not reset to a higher window object.  It stays in the scope of its argument. 
